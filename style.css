@@ -9,6 +9,7 @@
         "main"
         "footer";
     gap: 0.2rem;
+
 }
 
 .logo {
@@ -25,8 +26,19 @@
 
 .navbar {
     grid-area: navbar;
+    display: flex;
+    flex-flow: row wrap;
     background-color: slateblue;
-    text-align: center;
+    justify-content: center;
+}
+.navbar a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+}
+.navbar a:hover {
+    background: turquoise;
 }
 .main {
     grid-area: main;
@@ -39,9 +51,11 @@
     background-color: rgb(163, 184, 43);
 }
 
-.button {
-    background-color: silver;
-    border-radius: 10px;
-    padding: 0.1rem;
-    margin: 0.1rem;
+@media only screen and (max-width:600px){
+    .logo {
+        max-width: 100%;
+    }
+    .main{
+        max-width: 100%;
+    }
 }
