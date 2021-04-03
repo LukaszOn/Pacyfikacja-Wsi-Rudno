@@ -1,3 +1,6 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .grid-main {
     height: 100vh;
     display: grid;
@@ -8,20 +11,21 @@
         "navbar"
         "main"
         "footer";
-    gap: 0.2rem;
+    row-gap: 0.3rem;
 
 }
 
 .logo {
     grid-area: logo;
     justify-self: center;
+    max-height: 200px;
     max-width: 50%;
-    background-color: rgb(59, 99, 219);
-
 }
 .logo img {
+    object-fit: cover;
     width: 100%;
     height: 100%;
+    offset-position: 300px;
 }
 
 .navbar {
@@ -50,7 +54,9 @@
     grid-area: footer;
     background-color: rgb(163, 184, 43);
 }
-
+p {
+    text-indent: 2rem;
+}
 @media only screen and (max-width:600px){
     .logo {
         max-width: 100%;

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Galeria Zdjec</title>
+    <style>
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "gbox1 gbox2 gbox3"
+                "gbox4 gbox5 gbox6"
+                "gbox7 gbox7 gbox7"
+            ;
+            gap: 0.2rem;
+        }
+
+        .g {}
+
+        .g img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        @media only screen and (max-width:600px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                grid-template-rows: none;
+                grid-template-areas:
+                    "gbox1"
+                    "gbox2"
+                    "gbox3"
+                    "gbox4"
+                    "gbox5"
+                    "gbox6"
+                    "gbox7";
+            }
+        }
+
+        a {
+            background-color: greenyellow;
+            border-radius: 10px;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: hotpink;
+        }
+
+        .g {
+            border: none;
+        }
+
+        .gbox1 {
+            grid-area: gbox1;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
+
+        .gbox2 {
+            grid-area: gbox2;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
+
+        .gbox3 {
+            grid-area: gbox3;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
+
+        .gbox4 {
+            grid-area: gbox4;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
+
+        .gbox5 {
+            grid-area: gbox5;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
+
+        .gbox6 {
+            grid-area: gbox6;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
+
+        .gbox7 {
+            display: flex;
+            flex-flow: row-wrap;
+            grid-area: gbox7;
+            justify-content: center;
+            align-content: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="gallery-grid">
+        <div class="g gbox1"><img src="images/1.jpg">Pomnik w miejscu selekcji niedaleko lasu
+        </div>
+        <div class="g gbox2"><img src="images/2.jpg">Msza polowa w lesie 23.04.1945 r. (na pierwszym planie trumna Ks.
+            Romana Ryczkowskiego)
+        </div>
+        <div class="g gbox3"><img src="images/3.jpg">
+            <div class="g">Pomnik w miejscu selekcji niedaleko lasu</div>
+        </div>
+        <div class="g gbox4"><img src="images/4.jpg">Msza polowa w lesie 23.04.1945 r</div>
+        <div class="g gbox5"><img src="images/5.jpg">Ołtarz polowy podczas mszy pogrzebowej 23.04.1945 r.</div>
+        <div class="g gbox6"><img src="images/6.jpg">Msza św. w intencji ofiar 23.04.1945 r.</div>
+        <div class="g gbox7"><a href="index.html">Powrót</a></div>
+    </div>
+</body>
+
+</html>
