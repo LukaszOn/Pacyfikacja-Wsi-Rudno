@@ -50,9 +50,10 @@ body {
     max-width: 50%;
 }
 .footer {
+    padding: 1rem;
     text-align: center;
     grid-area: footer;
-    background-color: rgb(163, 184, 43);
+    background-color: rgb(246, 255, 197);
 }
 p {
     text-indent: 2rem;
