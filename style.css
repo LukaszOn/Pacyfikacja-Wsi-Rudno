@@ -55,10 +55,15 @@ body {
     max-width: 50%;
 }
 .footer {
+    padding: 1rem;
     text-align: center;
     grid-area: footer;
+<<<<<<< HEAD
     background-color: rgb(211, 211, 211);
     padding:1rem;
+=======
+    background-color: rgb(246, 255, 197);
+>>>>>>> 5b7c33b7da303aa0c4a7c1ec65f0eb8b41f86ac5
 }
 p {
     text-align: justify;
