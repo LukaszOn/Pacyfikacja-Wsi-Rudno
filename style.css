@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@0;1&display=swap');
+
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Fanwood Text', serif;
 }
 .grid-main {
     height: 100vh;
@@ -17,22 +19,24 @@ body {
 
 .logo {
     grid-area: logo;
-    justify-self: center;
-    max-height: 200px;
-    max-width: 50%;
+    min-height: 6rem;
+    background-color: rgb(211, 211, 211);
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
-.logo img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    offset-position: 300px;
+.titles {
+    font-family: 'Fanwood Text', serif;
+    font-size: 2rem;
+    font-weight:bold;
+    margin:auto;
 }
 
 .navbar {
     grid-area: navbar;
     display: flex;
     flex-flow: row wrap;
-    background-color: slateblue;
+    background-color: rgb(156, 156, 156);
     justify-content: center;
 }
 .navbar a {
@@ -42,9 +46,10 @@ body {
     color: white;
 }
 .navbar a:hover {
-    background: turquoise;
+    background: rgb(71, 71, 71);
 }
 .main {
+    font-size: 1.3rem;
     grid-area: main;
     justify-self: center;
     max-width: 50%;
@@ -52,15 +57,14 @@ body {
 .footer {
     text-align: center;
     grid-area: footer;
-    background-color: rgb(163, 184, 43);
+    background-color: rgb(211, 211, 211);
+    padding:1rem;
 }
 p {
+    text-align: justify;
     text-indent: 2rem;
 }
-@media only screen and (max-width:600px){
-    .logo {
-        max-width: 100%;
-    }
+@media only screen and (max-width:900px){
     .main{
         max-width: 100%;
     }
