@@ -3,9 +3,9 @@
   <head>
     <title>Galeria Zdjec</title>
     <style>
-        body {
-            background-color: rgb(237, 253, 253);
-        }
+      body {
+        background-color: rgb(237, 253, 253);
+      }
       .gallery-grid {
         display: grid;
         grid-template-rows: auto auto auto;
@@ -31,8 +31,8 @@
         border-radius: 2%;
       }
       .g img:hover {
-        transition: 0.5s ease;
         opacity: 50%;
+        transition: 1s ease;
       }
       .gbox7 {
         grid-row: 3 / 4;
@@ -53,22 +53,42 @@
       .gbox7 > a:hover {
         background-color: hotpink;
       }
-
       .gallery {
+        display: none;
+        max-width: 70%;
+        max-height: 70%;
         position: absolute;
-        margin: 50% 50% 50% 0%
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        overflow: hidden;
+        border: solid 10px;
+        background-color: rgb(237, 253, 253);
         z-index: 1;
+      }
+      .gallery img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: fill;
       }
     </style>
   </head>
 
   <body>
-    <!-- <div class="gallery">
-      <img src="images/1.jpg" />
-    </div> -->
+    <div class="gallery">
+      <!-- <img src="images/1.jpg" width="2000" height="2000" />
+      <img src="images/2.jpg" width="2000" height="2000" />
+      <img src="images/3.jpg" width="2000" height="2000" />
+      <img src="images/4.jpg" width="2000" height="2000" />
+      <img src="images/5.jpg" width="2000" height="2000" />
+      <img src="images/6.jpg" width="2000" height="2000" /> -->
+    </div>
+
     <div class="gallery-grid">
       <div class="g gbox1">
-        <a href=""><img src="images/1.jpg" /></a>
+        <img src="images/1.jpg" />
         <div><p>Pomnik w miejscu selekcji niedaleko lasu</p></div>
       </div>
       <div class="g gbox2">
@@ -98,5 +118,6 @@
       </div>
       <div class="gbox7"><a href="index.html">Powrót</a></div>
     </div>
+    <script src="galeria.js"></script>
   </body>
 </html>
